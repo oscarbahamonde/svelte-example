@@ -49,8 +49,8 @@
   }
 
   async function signout() {
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
+    onAuthStateChanged(auth, ($user) => {
+      if ($user) {
         signOut(auth);
         this.$user = null;
       }

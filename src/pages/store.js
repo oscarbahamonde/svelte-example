@@ -12,6 +12,15 @@ const config = {
     appId: "1:1009380579533:web:996b3a270aff76098d7184"
 }
 
+import axios from 'axios'
+
+const products = async () => {
+    const response = await axios.get('localhost:8000/products')
+    return response.data
+}
+
 export const app = initializeApp(config)
 export const auth = getAuth(app)
 export const user = writable(null)
+export const online = writable(false)
+export const cart = writable([])
