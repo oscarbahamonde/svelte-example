@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lily+Script+One&family=Noto+Serif&family=Ubuntu+Mono&display=swap');
+@import url('/node_modules/tailwindcss/utilities.css');
+@import url('@mdi/font/css/materialdesignicons.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-serif {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.font-sans{
+    font-family: 'Lato', sans-serif;
+}
+
+.font-mono{
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.font-script{
+    font-family: 'Lily Script One', cursive;
+}
+
+img{
+    @apply mx-auto;
+    @apply max-w-full;
+    @apply object-cover;
+    @apply object-center;
+    @apply rounded-lg;
+    @apply shadow-lg;
+    @apply p-2;
+    &:hover{
+        @apply transform scale-105;
+        @apply brightness-125;
+        @apply cursor-pointer;
+    }
+}
+
+.btn-circle{
+    @apply hover:bg-primary;
+    @apply hover:text-primary-content;
+    i{
+        @apply mdi;
+        @apply hover:scale-125;
+    
+    }
+}
