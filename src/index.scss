@@ -1,6 +1,6 @@
+@import url('@mdi/font/css/materialdesignicons.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Lily+Script+One&family=Noto+Serif&family=Ubuntu+Mono&display=swap');
 @import url('/node_modules/tailwindcss/utilities.css');
-@import url('@mdi/font/css/materialdesignicons.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -40,8 +40,47 @@ img .logo{
     @apply hover:bg-primary;
     @apply hover:text-primary-content;
     i{
-        @apply mdi;
         @apply hover:scale-125;
     
     }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background: #333C4D;
+    &:hover{
+        @apply brightness-50;
+    }
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px teal;
+    border-radius: 7px;
+    &:hover{
+        @apply brightness-50;
+    }
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #66CC8A;
+    border-radius: 7px;
+    &:hover{
+        @apply brightness-50;
+    }
+  }
+
+  .flip-add {
+      @apply rounded-full;
+     &:hover{
+        @apply transform scale-105;
+        @apply brightness-125;
+        @apply cursor-pointer;
+        @apply font-bold;
+        i{
+            @apply mdi-plus;
+        }
+  }
 }

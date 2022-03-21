@@ -1,9 +1,8 @@
 <script>
-    import { user } from "./store";
-    let board = []
-    let cards = []
-    let users = []
-    
-    
-    
+import Product from '../components/Product.svelte';
+
+
 </script>
+
+
+<Product />

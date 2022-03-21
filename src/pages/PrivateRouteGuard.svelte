@@ -12,7 +12,6 @@
     });
   }
 </script>
-
 {#if $user}
   <slot />
 {/if}
